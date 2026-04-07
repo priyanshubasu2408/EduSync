@@ -1,75 +1,93 @@
-# URL Shortener with JWT Authentication
+EduSync – Smart Attendance & Curriculum Management System
+📌 Overview
 
-A full-stack URL shortener application with JWT-based authentication, comprehensive analytics, and modern UI components.
+EduSync is a smart and efficient attendance and curriculum management application designed to transform traditional classroom systems into a modern, digital experience. By leveraging QR-based attendance, real-time synchronization, and curriculum tracking, EduSync ensures accuracy, transparency, and better academic management.
 
-## Features
+The platform bridges the gap between students and faculty by providing a centralized system for attendance monitoring and syllabus progress tracking.
 
-- **Authentication**: JWT-based authentication with modern login/register forms
-- **User Management**: User-specific URL management with secure sessions
-- **Analytics Dashboard**: Comprehensive analytics with visual charts and statistics
-- **Modern UI**: Component-based architecture with improved design
-- **Responsive Design**: Mobile-first design that works on all devices
-- **URL Management**: Create, view, and track shortened URLs
-- **Click Analytics**: Detailed click tracking and performance metrics
-- **Component Architecture**: Modular, maintainable codebase
+🎯 Objectives
+Automate attendance using QR-based technology
+Ensure authenticity with location-based validation
+Track curriculum progress in real-time
+Provide insights into attendance and academic activities
+Enhance communication between students and faculty
+💡 Key Features
+✅ Smart Attendance System
+Dynamic QR code generation for each class/session
+Students scan QR codes to mark attendance
+Time-restricted validation to prevent misuse
+📍 Location Verification
+Uses device location to confirm student presence
+Prevents proxy or fake attendance
+📚 Curriculum Tracking
+Faculty can update topics covered in each lecture
+Students can monitor syllabus completion and pending topics
+📊 Analytics Dashboard
+Attendance percentage tracking
+Daily, weekly, and monthly reports
+Performance insights for students
+🔔 Notifications & Alerts
+Alerts for low attendance
+Reminders for incomplete syllabus
+Important academic updates
+🛠️ Technology Stack
+📱 Frontend
+React Native
+JavaScript
+🌐 Backend
+Node.js
+Express.js
+🗄️ Database
+MongoDB (recommended) / MySQL
+🔧 Tools & APIs
+QR Code Generator
+Geolocation API
+RESTful APIs
+⚙️ System Architecture
 
-## Tech Stack
+EduSync follows a client-server architecture:
 
-- **Backend**: Node.js, Express, MongoDB, JWT
-- **Frontend**: React, TypeScript, Vite
-- **Authentication**: JWT tokens with bcrypt password hashing
-- **UI Components**: Custom React components with modern CSS
+User logs into the mobile app (Student/Faculty)
+Faculty generates a QR code for the session
+Students scan the QR code via the app
+Location is verified in real-time
+Attendance data is stored in the database
+Dashboard updates dynamically
+🔐 Security Features
+Secure authentication (JWT-based login system)
+Time-bound QR code validation
+Location-based access control
+Encrypted data transmission
+📈 Advantages
+Eliminates manual attendance errors
+Reduces proxy attendance
+Real-time data synchronization
+Improves academic transparency
+Easy to use and scalable
+⚠️ Limitations
+Requires stable internet connection
+GPS accuracy may vary indoors
+Smartphone dependency for users
+🚀 Future Scope
+AI-based attendance prediction system
+Face recognition integration
+Cloud deployment (AWS/Firebase)
+Integration with Learning Management Systems (LMS)
+Offline mode with sync capability
+📷 Use Case
 
-## Component Architecture
+A teacher generates a QR code at the beginning of a class. Students scan it using the EduSync mobile app. The system verifies their location and marks attendance instantly. Simultaneously, the teacher updates the topic covered, allowing students to track their syllabus progress in real-time.
 
-### Frontend Components
-- **AuthForm**: Modern login/register interface with password visibility toggle
-- **Navbar**: Responsive navigation with user profile and logout functionality  
-- **Analytics**: Comprehensive dashboard with statistics and visual charts
-- **UrlShortener**: Enhanced URL creation form with success feedback
-- **UrlList**: Improved URL display with better card design and interactions
+👨‍💻 Contributors
+Priyanshu Basu (Developer & Designer)
+📄 License
 
-## Setup
+This project is developed for academic and research purposes. Licensing can be updated for production use.
 
-### Backend
-1. Navigate to backend directory: `cd backend`
-2. Install dependencies: `npm install`
-3. Set environment variables:
-   ```
-   JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/url-shortener
-   ```
-4. Start server: `npm run dev`
+⭐ Conclusion
 
-### Frontend
-1. Navigate to frontend directory: `cd frontend`
-2. Install dependencies: `npm install`
-3. Start development server: `npm run dev`
+EduSync provides a smart, reliable, and scalable solution for managing attendance and curriculum in educational institutions. By integrating modern technologies like mobile apps, real-time databases, and location tracking, it enhances efficiency and promotes a smarter learning environment.
 
-## Authentication Flow
+🔥 Tagline
 
-1. Users must register/login to access the application
-2. JWT tokens are stored in localStorage
-3. All URL operations require authentication
-4. Users can only see and manage their own URLs
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-
-### URLs (Protected)
-- `POST /api/shorten` - Create short URL
-- `GET /api/urls` - Get user's URLs
-- `GET /:shortUrl` - Redirect to original URL (public)
-
-## Environment Variables
-
-Create a `.env` file in the backend directory with:
-```
-JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/url-shortener
-``` 
+👉 “Sync Your Learning. Simplify Your Classroom.”
