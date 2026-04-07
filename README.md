@@ -1,16 +1,16 @@
-# 🚀 **EduSync**
+#  **EduSync**
 ### *Sync Your Learning. Simplify Your Classroom.*
 
 ---
 
-## 📌 **Overview**
+## **Overview**
 **EduSync** is a smart attendance and curriculum management mobile application designed to modernize traditional classroom systems. It integrates **QR-based attendance, real-time synchronization, and curriculum tracking** into a single platform.
 
 The system enhances transparency, reduces manual effort, and ensures accurate academic monitoring for both students and faculty.
 
 ---
 
-## 🎯 **Objectives**
+##  **Objectives**
 - Automate attendance using QR-based technology  
 - Ensure authenticity with location-based validation  
 - Track curriculum progress in real-time  
